@@ -1,0 +1,63 @@
+# --- Maven / Java ---
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+replay_pid*
+
+# --- Local env & secrets (never commit) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.jks
+*.key
+credentials*.json
+**/secrets/**
+
+# --- IDE ---
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+*.swp
+*~
+.project
+.classpath
+.settings/
+.factorypath
+.apt_generated/
+.springBeans
+.sts4-cache/
+
+# --- OS ---
+.DS_Store
+.DS_Store?
+Thumbs.db
+Desktop.ini
+
+# --- Logs & temp ---
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.bak
+
+# --- Test / coverage ---
+.coverage
+coverage/
+*.lcov
+.jacoco/
+jacoco.exec
+
+# --- Docker local overrides ---
+docker-compose.override.yml
+
+# --- Cursor / local agent ---
+.cursor/

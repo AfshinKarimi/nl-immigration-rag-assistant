@@ -1,0 +1,104 @@
+IND Highly Skilled Migrant (kennismigrant) — study digest for RAG demo
+
+DISCLAIMER
+This is an original summary for a technical demo. It is not the official IND
+brochure, not legal advice, and not a complete copy of IND rules. Amounts and
+procedures change. Always verify on ind.nl or with a licensed adviser before
+you act.
+
+Official sources (read these for the full picture)
+- Permit overview:
+  https://ind.nl/en/residence-permits/work/highly-skilled-migrant
+- Income / salary tables (indexed every 1 January):
+  https://ind.nl/en/required-amounts-income-requirements
+- 2026 fees and required amounts (IND news):
+  https://ind.nl/en/news/fees-and-required-amounts-for-2026-known
+- Official brochure (PDF form 3072 — download from IND, do not rely on this digest):
+  https://ind.nl/en/forms/3072.pdf
+- Public register of recognised sponsors:
+  https://ind.nl/en/public-register-recognised-sponsors
+- Background on the national HSM scheme:
+  https://ind.nl/en/about-us/background-articles/national-highly-skilled-migrant-scheme
+
+What is a highly skilled migrant permit?
+A residence permit to work in the Netherlands as a kennismigrant. You cannot
+normally apply for it yourself. A recognised sponsor (the employer) applies
+via the IND. The sponsor must already appear on the public register of
+recognised sponsors before the application is filed.
+
+Core requirements (high level)
+- You meet the general admission requirements that apply to all applicants.
+- You have an employment contract (or equivalent appointment) with an employer
+  or research institution in the Netherlands that is an IND-recognised sponsor.
+- You meet the income (salary) criterion in force on the relevant date.
+- The salary must also be in line with the market (comparable jobs). The IND
+  may consult UWV if market conformity is unclear.
+- Some regulated healthcare professions require BIG registration.
+
+2026 gross monthly salary criterion (excluding holiday allowance)
+Published by the IND for applications in 2026 (check the live table before use):
+- Highly skilled migrant aged 30 or older: 5,942 euro
+- Highly skilled migrant younger than 30: 4,357 euro
+- Reduced salary criterion (strict extra conditions): 3,122 euro
+- European Blue Card: 5,942 euro
+- European Blue Card reduced criterion: 4,754 euro
+
+Salary notes
+- Figures are gross per month without holiday pay.
+- The amount that applies is usually the one in force on the application date
+  for a first permit or an extension with the same employer.
+- If you change employer, IND rules look at the amount in force when the new
+  contract starts — not necessarily the day the notification is sent.
+- Holiday allowance, discretionary bonuses, and irregular pay generally do not
+  count the same way as guaranteed monthly salary. The IND looks at SV salary
+  (social-insurance wage) on the payslip.
+
+Reduced salary criterion (highly skilled migrant)
+IND business information states that the reduced HSM criterion is not automatic.
+Typical conditions include: you have or had (or you fully qualify for) the
+orientation / search year for highly skilled migrants, and the HSM permit is
+applied for within three years of graduation, PhD date, or the end of a
+scientific-research permit. The three-year window must not have expired at
+application. Confirm the current wording on ind.nl.
+
+Who applies and how long it takes
+- The recognised sponsor files the application (often via the IND Business
+  Portal).
+- Statutory decision time for a regular residence application is commonly
+  described as up to 90 days. Recognised-sponsor HSM files are often processed
+  faster (IND aims at about two weeks, but missing documents pause the clock).
+- If you need an MVV (provisional residence permit / entry visa), the sponsor
+  usually applies for MVV and the residence permit together. You collect the
+  MVV at the embassy or consulate named in the application.
+
+Fees (2026, IND-published — confirm live table)
+- Highly skilled migrant / EU Blue Card residence application: 423 euro
+- Recognition as a sponsor (regular): 5,080 euro
+- Recognition as a sponsor (reduced, smaller companies — conditions apply):
+  2,539 euro
+Family-member fees are listed separately on the IND fees pages.
+
+What the permit allows (typical wording)
+The residence document for this purpose generally allows work as a highly
+skilled migrant for the recognised sponsor. Exact labour-market remarks on the
+card are defined by IND; read the brochure 3072 and the sticker/text on your
+own permit.
+
+Related but different routes
+- EU Blue Card: EU scheme; salary and qualification rules differ (see IND
+  Blue Card pages). A degree is typically more central than in the national
+  HSM scheme.
+- Orientation year (search year) for graduates and researchers: a different
+  permit that can later connect to the reduced HSM salary criterion.
+- Intra-corporate transferee (ICT): different directive and conditions.
+
+How to get the FULL official document
+1. Open https://ind.nl/en/forms/3072.pdf and save brochure 3072.
+2. Optionally save the live salary page or the December IND business newsletter.
+3. Ingest into this assistant:
+
+   curl -X POST http://localhost:8080/api/ingestion/upload \
+     -F "file=@/path/to/3072.pdf" \
+     -F "section=ind-hsm"
+
+Do not treat this digest as a substitute for 3072.pdf or a lawyer.

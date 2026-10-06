@@ -1,0 +1,9 @@
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: "nlrag-app"
+    metrics_path: "/actuator/prometheus"
+    static_configs:
+      # Management port only — not the public API on 8080
+      - targets: ["app:8081"]
